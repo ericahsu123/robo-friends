@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
+import Loading from './Loading';
 import './styles.css';
 
 const App = () => {
@@ -32,7 +33,9 @@ const App = () => {
   return (
     <div className="ui container center aligned">
       <SearchBox query={query} handleQuery={handleQuery} />
-      <CardList robots={searchRobots} />
+      <div style={{ marginTop: '120px' }}>
+        {robots.length === 0 ? <Loading /> : <CardList robots={searchRobots} />}
+      </div>
     </div>
   );
 };

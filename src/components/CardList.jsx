@@ -3,7 +3,7 @@ import Card from './Card';
 
 const CardList = (props) => {
   return (
-    <div className="ui cards" style={{ marginTop: '150px' }}>
+    <div className="ui cards">
       {props.robots.map((robot) => {
         return <Card key={robot.id} name={robot.name} email={robot.email} />;
       })}
