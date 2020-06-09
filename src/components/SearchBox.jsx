@@ -1,8 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { changeSearchString } from '../actions';
 
 const SearchBox = (props) => {
   const handleChange = (event) => {
-    props.handleQuery(event.target.value);
+    props.changeSearchString(event.target.value);
   };
   return (
     <div className="ui top fixed huge stackable menu">
@@ -24,4 +27,10 @@ const SearchBox = (props) => {
   );
 };
 
-export default SearchBox;
+const mapStateToProps = (state) => {
+  return {
+    query: state.query,
+  };
+};
+
+export default connect(mapStateToProps, { changeSearchString })(SearchBox);
