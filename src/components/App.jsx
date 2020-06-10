@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import CardList from './CardList';
-import SearchBox from './SearchBox';
+import NavBar from './NavBar';
 import Loading from './Loading';
 import './styles.css';
 import { fetchRobots } from '../actions';
@@ -17,7 +17,7 @@ const App = (props) => {
 
   return (
     <div className="ui container center aligned">
-      <SearchBox />
+      <NavBar />
       <div style={{ marginTop: '120px' }}>
         {props.robots.length === 0 ? <Loading /> : <CardList />}
       </div>

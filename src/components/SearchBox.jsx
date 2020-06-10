@@ -8,20 +8,15 @@ const SearchBox = (props) => {
     props.changeSearchString(event.target.value);
   };
   return (
-    <div className="ui top fixed huge stackable menu">
-      <div className="item">
-        <h1>RoboFriends</h1>
-      </div>
-      <div className="right item">
-        <div className="ui icon input">
-          <input
-            type="text"
-            placeholder="Search robots..."
-            onChange={handleChange}
-            value={props.query}
-          />
-          <i className="search icon"></i>
-        </div>
+    <div className="right item">
+      <div className="ui icon input">
+        <input
+          type="text"
+          placeholder="Search robots..."
+          onChange={handleChange}
+          value={props.query}
+        />
+        <i className="search icon"></i>
       </div>
     </div>
   );
