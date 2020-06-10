@@ -5,7 +5,7 @@ const Card = (props) => {
     <div className="ui centered card">
       <div className="image">
         <img
-          src={`https://robohash.org/${props.name}.png`}
+          src={`https://robohash.org/${props.name}.png?bgset=bg1 `}
           alt="robot"
           style={{ backgroundColor: 'rgb(185, 226, 224)' }}
         />
