@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar/> component matches snapshot 1`] = `
+<div
+  className="ui top fixed huge stackable menu"
+>
+  <div
+    className="item"
+  >
+    <h1>
+      RoboFriends
+    </h1>
+  </div>
+  <div
+    className="right item"
+  >
+    <div
+      className="ui icon input"
+    >
+      <input
+        aria-label="Search Robots"
+        data-testid="search-input"
+        onChange={[Function]}
+        placeholder="Search robots..."
+        type="text"
+      />
+      <i
+        className="search icon"
+      />
+    </div>
+  </div>
+</div>
+`;

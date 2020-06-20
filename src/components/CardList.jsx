@@ -2,11 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Card from './Card';
+import filterArrayOfObjects from './utils/filterArrayOfObjects';
 
 const CardList = (props) => {
-  const searchRobots = props.robots.filter((robot) => {
-    return robot.name.toLowerCase().includes(props.query.toLowerCase());
-  });
+  const searchRobots = filterArrayOfObjects(props.robots, 'name', props.query);
 
   return (
     <div className="ui cards">
@@ -18,7 +17,7 @@ const CardList = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  return { robots: state.robots, query: state.query };
+  return { robots: state.robots.robots, query: state.query };
 };
 
 export default connect(mapStateToProps)(CardList);

@@ -11,6 +11,7 @@ const SearchBox = (props) => {
     <div className="right item">
       <div className="ui icon input">
         <input
+          data-testid="search-input"
           aria-label="Search Robots"
           type="text"
           placeholder="Search robots..."

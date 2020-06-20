@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardList/> component matches snapshot 1`] = `
+<div
+  className="ui cards"
+>
+  <div
+    className="ui centered card"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="robot"
+        src="https://robohash.org/Aby.png?bgset=bg1 "
+        style={
+          Object {
+            "backgroundColor": "rgb(185, 226, 224)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="center aligned header"
+      >
+        Aby
+      </div>
+      <div
+        className="center aligned description"
+      >
+        aby@gmail.com
+      </div>
+      <span
+        className="right floated"
+      >
+        <i
+          className="star outline like icon"
+          data-testid="add-count"
+          onClick={[Function]}
+        />
+        <span
+          data-testid="likes-count"
+        >
+          0
+        </span>
+        <span>
+           
+        </span>
+        <span>
+          stars
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="ui centered card"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="robot"
+        src="https://robohash.org/Abt.png?bgset=bg1 "
+        style={
+          Object {
+            "backgroundColor": "rgb(185, 226, 224)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="center aligned header"
+      >
+        Abt
+      </div>
+      <div
+        className="center aligned description"
+      >
+        abt@mail.com
+      </div>
+      <span
+        className="right floated"
+      >
+        <i
+          className="star outline like icon"
+          data-testid="add-count"
+          onClick={[Function]}
+        />
+        <span
+          data-testid="likes-count"
+        >
+          0
+        </span>
+        <span>
+           
+        </span>
+        <span>
+          stars
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

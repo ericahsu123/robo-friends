@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBox/> component matches snapshot 1`] = `
+<div>
+  <div
+    class="right item"
+  >
+    <div
+      class="ui icon input"
+    >
+      <input
+        aria-label="Search Robots"
+        data-testid="search-input"
+        placeholder="Search robots..."
+        type="text"
+        value="hi"
+      />
+      <i
+        class="search icon"
+      />
+    </div>
+  </div>
+</div>
+`;

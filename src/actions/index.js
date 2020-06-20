@@ -1,15 +1,20 @@
 import axios from 'axios';
 import types from './types';
 
-export const fetchRobots = () => {
+export const fetchRobots = (url) => {
   return async (dispatch) => {
-    const response = await axios.get(
-      'https://jsonplaceholder.typicode.com/users'
-    );
-    dispatch({
-      type: types.FETCH_ROBOTS,
-      payload: response.data,
-    });
+    try {
+      const response = await axios.get(url);
+      dispatch({
+        type: types.FETCH_ROBOTS_SUCCESS,
+        payload: { robots: response.data },
+      });
+    } catch (error) {
+      dispatch({
+        type: types.FETCH_ROBOTS_ERROR,
+        payload: { error: error },
+      });
+    }
   };
 };
 

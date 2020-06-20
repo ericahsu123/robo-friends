@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="ui centered card"
+>
+  <div
+    className="image"
+  >
+    <img
+      alt="robot"
+      src="https://robohash.org/undefined.png?bgset=bg1 "
+      style={
+        Object {
+          "backgroundColor": "rgb(185, 226, 224)",
+        }
+      }
+    />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="center aligned header"
+    />
+    <div
+      className="center aligned description"
+    />
+    <span
+      className="right floated"
+    >
+      <i
+        className="star outline like icon"
+        data-testid="add-count"
+        onClick={[Function]}
+      />
+      <span
+        data-testid="likes-count"
+      >
+        0
+      </span>
+      <span>
+         
+      </span>
+      <span>
+        stars
+      </span>
+    </span>
+  </div>
+</div>
+`;

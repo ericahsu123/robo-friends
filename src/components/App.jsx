@@ -1,32 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
-import CardList from './CardList';
-import NavBar from './NavBar';
-import Loading from './Loading';
-import './styles.css';
 import { fetchRobots } from '../actions';
+import MainPage from './MainPage';
 
 const App = (props) => {
-  useEffect(() => {
-    props.fetchRobots();
-    // eslint-disable-next-line
-  }, []);
-  // console.log('query', query);
-  // console.log('robots', robots);
-
-  return (
-    <div className="ui container center aligned">
-      <NavBar />
-      <div style={{ marginTop: '120px' }}>
-        {props.robots.length === 0 ? <Loading /> : <CardList />}
-      </div>
-    </div>
-  );
+  return <MainPage {...props} />;
 };
 
 const mapStateToProps = (state) => {
-  return { robots: state.robots };
+  return { robots: state.robots.robots, error: state.robots.error };
 };
 
 export default connect(mapStateToProps, { fetchRobots })(App);

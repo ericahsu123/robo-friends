@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading/> matches snapshot 1`] = `
+<div>
+  <div
+    className="ui active inverted dimmer"
+  >
+    <div
+      className="ui text loader"
+    >
+      Loading
+    </div>
+  </div>
+</div>
+`;
